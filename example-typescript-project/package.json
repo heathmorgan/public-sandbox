@@ -1,0 +1,27 @@
+{
+  "name": "example-typescript-project",
+  "version": "1.0.0",
+  "description": "A demonstration project",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heathmorgan/public-sandbox.git"
+  },
+  "keywords": [
+    "demonstration",
+    "blank"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heathmorgan/public-sandbox/issues"
+  },
+  "homepage": "https://github.com/heathmorgan/public-sandbox#readme",
+  "devDependencies": {
+    "typescript": "4.9.3"
+  }
+}

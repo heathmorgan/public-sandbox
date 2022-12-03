@@ -7,5 +7,68 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-# https://github.com/takari/maven-wrapper#usage-without-binary-jar
-.mvn/wrapper/maven-wrapper.jar
+
+# Java error logs
+hs_err_pid*.log
+
+# JetBrains tools
+# https://intellij-support.jetbrains.com/hc/en-us/articles/206544839-How-to-manage-projects-under-Version-Control-Systems
+# See also .idea/.gitignore
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/shelf/
+**/*.iml
+
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# eclipse
+bin/
+
+# Debug files
+\.attach_pid*
+
+# emacs
+*~
+\.\#*
+\#*\#
+
+# vim
+*.swp
+*.swo
+
+# patch
+*.orig
+*.rej
+
+# Compiled output
+dist/
+tmp/
+out-tsc/
+bazel-out/
+
+# Node
+node/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Miscellaneous
+.angular/cache/
+.sass-cache/
+connect.lock/
+coverage/
+libpeerconnection.log
+testem.log
+typings/
+
+# System files
+.DS_Store
+Thumbs.db
