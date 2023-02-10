@@ -1,0 +1,17 @@
+FROM ubi8/ubi:8.7
+
+RUN dnf install -y \
+           buildah \
+           git-lfs \
+           java-11-openjdk-devel \
+           maven
+
+RUN useradd podman && \
+    echo podman:10000:5000 > /etc/subuid && \
+    echo podman:10000:5000 > /etc/subgid
+
+USER podman
+WORKDIR /home/podman
+
+RUN cd /home/podman && \
+    git clone https://github.com/heathmorgan/public-sandbox
