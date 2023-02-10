@@ -1,0 +1,3 @@
+FROM ubi8/ubi
+ENV YO=yo
+
