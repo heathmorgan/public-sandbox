@@ -1,17 +1,18 @@
-FROM ubi8/ubi:8.7
+FROM registry.access.redhat.com/ubi8/ubi:8.7
 
 RUN dnf install -y \
            buildah \
            git-lfs \
            java-11-openjdk-devel \
-           maven
+           maven && \
+    dnf clean all
 
-RUN useradd podman && \
-    echo podman:10000:5000 > /etc/subuid && \
-    echo podman:10000:5000 > /etc/subgid
+RUN useradd imaginator && \
+    echo imaginator:10000:5000 > /etc/subuid && \
+    echo imaginator:10000:5000 > /etc/subgid
 
-USER podman
-WORKDIR /home/podman
 
-RUN cd /home/podman && \
-    git clone https://github.com/heathmorgan/public-sandbox
+USER imaginator
+WORKDIR /home/imaginator
+
+RUN git clone https://github.com/heathmorgan/public-sandbox

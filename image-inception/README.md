@@ -9,7 +9,7 @@ Use buildah to build:
 
 Run the container:
 
-    podman run --user podman --interactive --tty --security-opt label=disable --security-opt unmask=ALL --device=/dev/fuse image-inception:latest bash
+    podman run --name image-inception-example --rm --interactive --tty --security-opt label=disable --security-opt unmask=ALL --device=/dev/fuse --hostname image-inception-example image-inception:0.0.0-SNAPSHOT /bin/bash
 
 Once inside, you can then build the image again but add --isolation chroot ...
 
