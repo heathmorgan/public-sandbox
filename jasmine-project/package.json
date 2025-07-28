@@ -1,0 +1,19 @@
+{
+  "name": "jasmine-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && jasmine"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/jasmine": "^5.1.8",
+    "@types/node": "^24.1.0",
+    "jasmine": "^5.9.0",
+    "typescript": "^5.8.3"
+  }
+}
